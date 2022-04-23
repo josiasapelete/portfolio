@@ -2,6 +2,8 @@
 
 body{
     background-color: rgb(197, 60, 60);
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
@@ -92,7 +94,7 @@ nav a:hover{
     .btn{
         background-color:rgb(16, 16, 250);
         color: white;
-        text-decoration: none;
+        /* text-decoration: none; */
         border: 2px solid transparent;
         font-weight: bold;
         border-radius: 30px;
@@ -247,7 +249,7 @@ nav a:hover{
         background-color: blue;
         color: white;
         bottom: 5%;
-        
+        margin: 10px auto;
     }
     .col3 a:hover{
         background-color:rgb(197, 60, 60) ;
@@ -291,6 +293,13 @@ nav a:hover{
         }
         .col3 div{
             flex-basis: 50%;
+
         }
+        .btn {
+             margin-left: 5px;
+            padding: 5px;
+            /* height: 10px; */
+        }
+        
     }
     
