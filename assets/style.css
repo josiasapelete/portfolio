@@ -4,7 +4,7 @@ body{
     /* background-color: rgb(197, 60, 60); */
     margin: 0;
     padding: 0;
-    background-color: greenyellow;
+    background-color: rgb(255, 255, 255);
 
 }
 a {
@@ -18,9 +18,10 @@ a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
+    position: relative;
     margin-top: -10px;
     display: flex;
-    background-color: rgb(16, 16, 250);
+    background-color: blue;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -42,15 +43,15 @@ h1::after{
     left: 0;
 }
 h1::before{
-    background: rgb(16, 16, 250);
-    animation: typing 3s  steps(20) forwards ;
+    background: blue;
+    animation: typing 2s  steps(20) forwards ;
 }
 @keyframes typing{
     to {left:100%}
 }
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     margin: 26px;
     font-size: 1rem;
@@ -59,6 +60,8 @@ nav {
     flex: 1;
     align-items: center;
     display: flex;
+    position: absolute;
+    right: 0;
 
 }
 nav div{
@@ -84,7 +87,7 @@ nav a:hover{
 .main{
     width: 80%;
     margin: 0 auto;
-    /* background-color: greenyellow; */
+    /* background-color: white; */
 }
 col2 img{
     width: 100%;
@@ -98,7 +101,7 @@ col2 img{
         text-decoration: none;
     }
     .btn{
-        background-color:rgb(16, 16, 250);
+        background-color:blue;
         color: white;
         /* text-decoration: none; */
         border: 2px solid transparent;
@@ -117,7 +120,6 @@ col2 img{
     .bouton{
         display: flex;
         justify-content: space-between;
-        /* margin: 10px; */
         width: 100%;
     
     }
@@ -134,7 +136,7 @@ col2 img{
         left: 0;
     }
     h2::before{
-        background: greenyellow;
+        background: white;
         animation: typing 5s 3s steps(20) forwards ;
     }
     
@@ -162,7 +164,7 @@ col2 img{
    
     .nom{
         display: block;
-        color: rgb(16, 16, 250);
+        color: blue;
     }
     /* ==========================================About me================================================ */
     .propos{
@@ -193,7 +195,7 @@ col2 img{
         font-size: 20px;
     }
     .bar{
-        background-color: wheat;
+        background-color: rgb(235, 179, 75);
         height: 15px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -207,7 +209,7 @@ col2 img{
     .skill .bar::before{
         content: "";
         position: absolute;
-        background-color: rgb(16, 16, 250);
+        background-color: blue;
         height: 100%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -278,6 +280,9 @@ col2 img{
         width: 100%;
         justify-content: center;
     }
+    .social a i{
+        color: white;
+    }
     .contact-me{
         display: flex;
         flex-direction: column;
@@ -286,8 +291,8 @@ col2 img{
         margin: 10px auto;
     }
     .social a{
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -306,7 +311,7 @@ col2 img{
     footer{
         width: 100vw;
         height: 80px;
-        background: rgb(16, 16, 250);
+        background: blue;
         color: white;
         text-align: center;
         padding-top: 30px;
@@ -412,12 +417,15 @@ col2 img{
         }
         nav{
             flex: 1;
-            justify-content: end;
         }
 
         nav ul li a{
-            font-size: 1rem;
-            margin-left: 10px;
+            font-size: 1.3rem;
+            margin-left: 30px;
         }
+        /* .bouton{
+            margin:;
+        } */
     }
+    
     
