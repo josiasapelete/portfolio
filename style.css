@@ -1,28 +1,21 @@
 /* =============================la barre de navigation================== */
 
 body{
-    background-color: rgb(197, 60, 60);
+    /* background-color: rgb(197, 60, 60); */
     margin: 0;
     padding: 0;
+    background-color: greenyellow;
+
 }
 a {
     text-decoration: none;
 }
-.contenaire{
-    width: 100vw;
-    margin: 0 auto;
-    background-color: green;
-}
-.main{
-    width: 80%;
-    margin: 0 auto;
-    background-color: greenyellow;
-}
 
 *{
     color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
     margin-top: -10px;
@@ -31,8 +24,8 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
-    border: solid;
     flex:1;
+    /* margin-bottom: 90px; */
 }
 
 h1{
@@ -60,30 +53,43 @@ nav ul {
     justify-content: space-around;
     list-style: none;
     margin: 26px;
+    font-size: 1rem;
 }
 nav {
     flex: 1;
     align-items: center;
-    
+    display: flex;
 
+}
+nav div{
+    display: none;
 }
 nav ul li a{
     text-decoration: none;
     color:white;
 }
-#burger{
-    position: absolute;
-    right: 0;
-    bottom: 30px;
-    visibility: hidden;
-}
+
 nav a:hover{
     border-bottom: 4px white solid;
 }
 /*====================================== La page d'acceuil =======================*/
                         /*====== animation du texte========== */
-    h2{
-       
+   
+.contenaire{
+    width: 100vw;
+    /* margin: 0 auto; */
+    /* background-color: green; */
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: greenyellow; */
+}
+col2 img{
+    width: 100%;
+}
+ h2{       
         position: relative;
         width: max-content;
         text-decoration: underline;
@@ -111,11 +117,12 @@ nav a:hover{
     .bouton{
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        /* margin: 10px; */
+        width: 100%;
     
     }
     .col2text .btn{
-        padding: 10px 50px;
+        padding: 10px auto;
     }
     h2::before,
     h2::after{
@@ -127,15 +134,16 @@ nav a:hover{
         left: 0;
     }
     h2::before{
-        background: rgb(255, 255, 255);
-        animation: typing 1s steps(20) forwards ;
+        background: greenyellow;
+        animation: typing 5s 3s steps(20) forwards ;
     }
     
     
     .contain{
         display: flex;
-        /* margin: 20px auto; */
+        margin: 20px auto;
         padding-bottom: 30px;
+        width: 100%;
     }
     .col2{
         flex-basis: 50%;
@@ -146,11 +154,11 @@ nav a:hover{
         height: 100%;
         
     }
-    .col2text{
+    /* .col2text{
         padding-top: 20% ;
         line-height: 40px;
         word-spacing: 6px;
-    }
+    } */
    
     .nom{
         display: block;
@@ -164,7 +172,7 @@ nav a:hover{
             /* ======================skills==================== */
     .skill{
         border: solid;
-        margin-left: 20px;
+        /* margin-left: 20px; */
         border-radius: 20px;
         height: max-content;
         padding-top: 50px;
@@ -252,8 +260,9 @@ nav a:hover{
         margin: 10px auto;
     }
     .col3 a:hover{
-        background-color:rgb(197, 60, 60) ;
-        transform:scale(1.4)
+        background-color:transparent ;
+        transform:scale(1.4);
+        color: black;
     }
     .col3 div{
         height: 50%;
@@ -261,6 +270,37 @@ nav a:hover{
         border-radius: 10px;
         margin-bottom: 10px;
         
+    }
+
+    /* ==============================================contact===================================== */
+    .social{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-me p, .contact-me div{
+        margin: 10px auto;
+    }
+    .social a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:  blue;
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .social a:hover{
+        transform: scale(1.3);
+        transition: .3s;
     }
     /* =======================================footer============================= */
     footer{
@@ -274,15 +314,75 @@ nav a:hover{
     }
     /* =============================================responsive====================================== */
 
-    @media  screen and (max-width:700px) {
+   @media screen and (max-width:287px) {
         *{
             font-size: 1rem;
+            box-sizing: border-box;
         }
-        /* .master{
-            width: 100%;
-        } */
+        .bouton{
+            display: flex;
+            flex-direction: column;
+            /* margin:5px auto; */
+        }
         .contain{
             flex-wrap: wrap;
+            width: 100%;
+        }
+        .btn {
+            margin: 10px;
+           padding: 3px;
+       }
+       /* nav ul{
+           display: none;
+       } */
+       .nom span{
+        display: block;
+    }
+    header{
+        height: 50px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        right: -26px;
+        width: max-content;
+        background-color: blue;
+    }
+    nav {
+        position: relative;
+
+    }
+    }
+    @media  screen and (min-width:288px) and (max-width:460px) {
+        *{
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        header{
+            height: 50px;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            right: -26px;
+            width: max-content;
+            background-color:blue;
+            /* justify-content: space-between; */
+        }
+       
+        nav {
+            position: relative;
+
+        }
+        
+        
+        .contain{
+            flex-wrap: wrap;
+            width: 100%;
         }
         .col2,.col3{
             flex-basis: 100%;
@@ -295,11 +395,29 @@ nav a:hover{
             flex-basis: 50%;
 
         }
+        .bouton{
+            margin: 5px 20%;
+            width: max-content;
+        }
         .btn {
-             margin-left: 5px;
-            padding: 5px;
+             margin-left: 3px;
+            padding: 3px;
             /* height: 10px; */
         }
         
+    }
+    @media screen and (min-width:700px) {
+        *{
+            font-size: 1.5rem;
+        }
+        nav{
+            flex: 1;
+            justify-content: end;
+        }
+
+        nav ul li a{
+            font-size: 1rem;
+            margin-left: 10px;
+        }
     }
     

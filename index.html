@@ -14,25 +14,29 @@
         <h1>JOSIAS APELETE</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#work">works</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <!-- <div><img src="image/burger.PNG" alt=""></div>             -->
         </nav>
         
      </header>
      <!-- ===============================================La page acceuil ================================-->
      <div class="main">
-    <section class="contain master">
-        <div class="col2 col2text"> <h2>Hello I am <span class="nom">JOSIAS APELETE .</span> </h2> 
+    <section id="home" class="contain master">
+        <div class="col2 col2text"> <h2>Hello I am <span class="nom">JOSIAS <span>APELETE.</span></span> </h2> 
             <h3>web developer, I create web sites and applications, maintain your site, solve problems related 
                 to the disfunction of your site and other things that you will discover by collaborating with me.
             </h3>
             <div class="bouton">
-                <a href="#" class="btn">Contact me</a>
-                <a href="#" class="btn">My works</a>
+                <a href="#contact" class="btn">Contact me</a>
+                <a href="#work" class="btn">My works</a>
             </div>
+        </div>
+        <div class="col2">
+            <img src="image/jak.jpg" alt="">
         </div>
     </section>
     <!-- =====================================================About me========================================= -->
@@ -95,14 +99,17 @@
         </div>
     </section>
     <!-- ==============================================================Mes projets========================================= -->
-    <section class="contain containpro">
+    <section id="work" class="contain containpro">
         <div class="col3">
             <div class="pro2 pro_img">
                 <img src="image/ecommerce.jpg" alt="">
             </div>
             <div class="pro2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores porro velit, vel dolorem nulla iure eligendi pariatur nihil repellendus veniam officia libero reprehenderit delectus incidunt neque consequatur architecto rem eius.</p>
-                <a href="#">Read more</a>
+                <p>Création de sites e-commerces.
+                    Des sites vous permettant de vendre vos produits en ligne
+                    avec une un flux professional
+                </p>
+               <p style="text-align: center;"> <a href="">Read more</a></p>
             </div>
         </div>
         <div class="col3">
@@ -110,8 +117,9 @@
                 <img src="image/imac.png" alt="">
             </div>
             <div class="pro2 ">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores porro velit, vel dolorem nulla iure eligendi pariatur nihil repellendus veniam officia libero reprehenderit delectus incidunt neque consequatur architecto rem eius.</p>
-                <a href="#">Read more</a>
+                <p>Création de sites Cent pour cent responsive.Des sites qui s'adaptent à n'importe quelle type d'écran</p>
+               <p style="text-align: center;"> <a href="">Read more</a></p>
+                
             </div>
         </div>
         <div class="col3">
@@ -119,10 +127,21 @@
                 <img src="image/businessman.jpg" alt="">
             </div>
             <div class="pro2 ">
-                <p>Lorem met consectetur adipisicing elit. Asperiores porro velit, vel dolorem nulla iure eligendi pariatur nihil repellendus veniam officia libero reprehenderit delectus incidunt neque consequatur architecto rem eius.</p>
-                <a href="#">Read more</a>               
+                <p>Etes vous un homme d'affaire et voulez mettre vos produire en ligne,faire la publication de vos produits 
+                    ou touché un public cible , veuillez consulter le read more.</p>
+               <p style="text-align: center;"> <a href="">Read more</a></p>             
             </div>
         </div>
+    </section>
+    <section class="contain contact-me">
+        <p id="contact"  >Contact Me</p>
+        <div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+
     </section>
      </div>
      <footer>
