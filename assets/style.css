@@ -65,7 +65,7 @@ nav {
 
 }
 
-nav div:checked ul{
+#burger:checked~ul{
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -372,6 +372,7 @@ col2 img{
         header{
             height: 50px;
         }
+        .btnburger
         nav ul{
             display: flex;
             flex-direction: column;
