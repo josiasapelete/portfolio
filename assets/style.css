@@ -1,7 +1,6 @@
 /* =============================la barre de navigation================== */
 
 body{
-    /* background-color: rgb(197, 60, 60); */
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
@@ -13,7 +12,6 @@ a {
 
 *{
     color: rgb(0, 0, 0);
-    /* font-size: 1.5rem; */
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -26,7 +24,6 @@ header{
     top: 0;
     z-index: 100;
     flex:1;
-    /* margin-bottom: 90px; */
 }
 
 h1{
@@ -65,13 +62,7 @@ nav {
 
 }
 
-#burger:checked~ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 26px;
-    font-size: 1rem;
-}
+
 nav ul li a{
     text-decoration: none;
     color:white;
@@ -85,14 +76,12 @@ nav a:hover{
    
 .contenaire{
     width: 100vw;
-    /* margin: 0 auto; */
-    /* background-color: green; */
+    
 }
 
 .main{
     width: 80%;
     margin: 0 auto;
-    /* background-color: white; */
 }
 col2 img{
     width: 100%;
@@ -108,20 +97,18 @@ col2 img{
     .btn{
         background-color:blue;
         color: white;
-        /* text-decoration: none; */
         border: 2px solid transparent;
         font-weight: bold;
         border-radius: 30px;
         transition: transform .4s; 
         margin-left: 15px;
         width: max-content;
+        padding: 10px;
     }
     .btn:hover{
         transform: scale(1.1);
     }
-    /* .master{
-        background-image: url(image/monitor-gfaf2e94a2_1920.jpg);
-    } */
+    
     .bouton{
         display: flex;
         justify-content: space-between;
@@ -151,6 +138,7 @@ col2 img{
         margin: 20px auto;
         padding-bottom: 30px;
         width: 100%;
+        
     }
     .col2{
         flex-basis: 50%;
@@ -161,15 +149,15 @@ col2 img{
         height: 100%;
         
     }
-    /* .col2text{
-        padding-top: 20% ;
-        line-height: 40px;
-        word-spacing: 6px;
-    } */
+    
    
     .nom{
         display: block;
         color: blue;
+    }
+    #home{
+        background-image:url(/assets/image/jo.png);
+        background-size: cover;
     }
     /* ==========================================About me================================================ */
     .propos{
@@ -239,11 +227,9 @@ col2 img{
     .containpro{
         display: flex;
         flex-direction: column;
-        /* width: max-content; */
     }
     .col3{
         flex-basis: 30%;
-        /* height: 800px; */
        
 
     }
@@ -329,7 +315,6 @@ col2 img{
         .bouton{
             display: flex;
             flex-direction: column;
-            /* margin:5px auto; */
         }
         .contain{
             flex-wrap: wrap;
@@ -339,9 +324,7 @@ col2 img{
             margin: 10px;
            padding: 3px;
        }
-       /* nav ul{
-           display: none;
-       } */
+       
        .nom span{
         display: block;
     }
@@ -408,15 +391,30 @@ col2 img{
         .btn {
              margin-left: 3px;
             padding: 3px;
-            /* height: 10px; */
         }
-       
+        #home{
+            background-color: red;
+        }
         
     }
     @media screen and (min-width:561px) and (max-width:849px) {
         header{
             font-size: 1.2rem;
-        }   
+        }  
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            right: -26px;
+            width: max-content;
+            background-color:blue;
+        }
+       
+        nav {
+            position: relative;
+
+        } 
         nav ul li{
             margin: 10px;
         }
@@ -433,9 +431,7 @@ col2 img{
             font-size: 1.3rem;
             margin-left: 30px;
         }
-        /* .col3{
-            display: flex;
-        } */
+       
         .containpro{
             display: flex;
         }
