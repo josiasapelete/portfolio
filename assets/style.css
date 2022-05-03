@@ -413,7 +413,7 @@ col2 img{
        
         
     }
-    @media screen and (min-width:461px) and (max-width:849px) {
+    @media screen and (min-width:561px) and (max-width:849px) {
         header{
             font-size: 1.2rem;
         }   
