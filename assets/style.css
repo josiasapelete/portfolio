@@ -392,10 +392,11 @@ col2 img{
              margin-left: 3px;
             padding: 3px;
         }
-        #home{
-            background-color: red;
+        .col2text{
+            backdrop-filter: blur(2px);
+    background-color: rgba(182, 182, 182, 0.2);
+
         }
-        
     }
     @media screen and (min-width:561px) and (max-width:849px) {
         header{
