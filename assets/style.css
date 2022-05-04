@@ -164,6 +164,9 @@ col2 img{
         display: flex;
         flex-direction: column;
     }
+    .col2 p{
+        text-align: justify;
+    }
             /* ======================skills==================== */
     .skill{
         border: solid;
@@ -179,6 +182,9 @@ col2 img{
     .skill .line{
         margin-bottom: 65px;
 
+    }
+    .pro2 p{
+        text-align: justify;
     }
     .skill .info{
         display: flex;
